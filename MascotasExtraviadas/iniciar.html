@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poesia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="../css/changes.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-----------------------------------------BARRA DE NAVEGACION------------------------------------------------------>
+    <!-- ESTA SECCION ESTA LA BARRA DE NAVEGACION-->
+    <!-- EN EL SCSS EN CUSTOM-NAVBAR TIENE LAS PROPIEDADES DE COLOR Y FONDO PUEDES MODIFICARLO AHI EN EL SCSS-->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo.jpg"
+                    alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Perritos Extraviados
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categoria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="amor.html">Amor</a></li>
+                            <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="terror.html">Terror</a></li>
+                            <li><a class="dropdown-item" href="fantasia.html">Fantasia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"
+                        id="inputBusqueda">
+                </form>
+                <div id="resultadoBusqueda" class="container_buscador">
+                    <!--Aqui se muestra el conatiner no hay que poner nada aqui :)) -->
+                </div>
+                <div class="ml-auto">
+                    <a href="./iniciar_sesion" class="mi-boton">
+                        <button type="button" class="btn btn-outline-dark" enable>Iniciar sesion</button>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-----------------------------------------FIN DE LA BARRA DE NAVEGACION------------------------------------------------------>
+
+    <!-----------------------------------------CONTENIDO DE LA PAGINA------------------------------------------------------>
+    <!-- ESTA SECCION ESTA EL CONTENIDO DE LA PAGINA-->
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="https://www.elmueble.com/medio/2023/01/19/perro-y-mujer_380500a8_230119155751_900x900.jpg"
+                class="img-fluid" alt="Sample image" style="border-radius: 20px;">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form>
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                 <h1 class="card-title-sino"> INICIAR SESION</h1>
+                </div>
+      
+                <div class="divider d-flex align-items-center my-4">
+                </div>
+      
+                <!-- correo -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control form-control-lg"
+                    placeholder="Introduce tu corre electronico" />
+                  <label class="form-label card-title-sino" for="form3Example3 ">Correo Electronico</label>
+                </div>
+      
+                <!-- contra -->
+                <div class="form-outline mb-3">
+                  <input type="password" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="Contraseña" />
+                  <label class="form-label card-title-sino" for="form3Example4">Contraseña</label>
+                </div>
+      
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-0">
+                    <input class="form-check-input me-2 card-title-sino" type="checkbox" value="" id="form2Example3" />
+                    <label class="form-check-label card-title-sino" for="form2Example3">
+                      Recordar contrasena
+                    </label>
+                  </div>
+                  <a href="#!" class="card-title-sino">Se te olvido la contraseña?</a>
+                </div>
+      
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="button" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Entrar</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0 card-title-sino">No tienes una cuenta? <a href="./registrarse.html"
+                      class="card-title">Registrarte</a></p>
+                </div>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-----------------------------------------FIN DEL CONTENIDO DE LA PAGINA------------------------------------------------------>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <footer class="footer mt-auto py-2 ">
+        <div class="row">
+            <div class="col-sm-4 col-lg-4 text-light text-center">
+                <p>Siguenos en:</p>
+                <a href="https://www.instagram.com/"> <img src="https://www.unipile.com/wp-content/uploads/2022/09/logo_instagram.png.webp"
+                        alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
+                <a href="https://www.facebook.com/?locale=es_LA"> <img src="https://cdn-icons-png.flaticon.com/256/2504/2504792.png" alt="Logo" width="30"
+                        height="30" class="d-inline-block align-text-top"></a>
+                <a href="https://twitter.com/?lang=es"> <img src="https://vectorseek.com/wp-content/uploads/2023/07/Twitter-X-New-Logo-Vector-2.png"
+                        alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
+                <p>@tecbiblio</p>
+            </div>
+            <div class="col-sm-3 col-lg-4 text-light text-center">
+                <img src="https://images.vexels.com/media/users/3/273076/isolated/preview/664402e989ea14a5fdceeee3a4c2b875-icono-de-juego-de-rol-de-libro.png"
+                    alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+            </div>
+            <div class="col-sm-5 col-lg-4 text-center">
+                <p>Contactanos por: </p>
+                <a class="link-1"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Logo"
+                        width="15" height="15" class="d-inline-block align-text-top">
+                    tecbiblio124@gmail.com</a></br>
+                <a class="link-1"> <img
+                        src="https://i.pinimg.com/originals/7e/71/4c/7e714c3c9148f4def7d3b5a704317df6.png" alt="Logo"
+                        width="15" height="15" class="d-inline-block align-text-top">
+                    +52-614-285-89-17</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/buscador.js"></script>
+</body>
+
+</html>
