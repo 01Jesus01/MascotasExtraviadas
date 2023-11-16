@@ -1,9 +1,9 @@
 :root {
-    --color-fondo: #f8e2cf;
-    --color-blanco: #ffff;
-    --color-texto: #000;
-    --color-navbar: #98521a;
-    --color-card: #ffbe86;
+    --color-fondo: #022025;
+    --color-blanco: #000000;
+    --color-texto: rgb(223, 171, 27);
+    --color-navbar:  rgb(255, 255, 255);
+    --color-card: rgb(0, 0, 0);
     --color-cafe-oscuro: #6F4D19;
 }
 
@@ -19,6 +19,9 @@ body {
 //ESTILOS DE LA BARRA DE NAVEGACION--------------------------------------
 .custom-navbar {
     background-color: var(--color-navbar);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); /* Establece la sombra interna */
+    border-bottom-left-radius: 15px; /* Radio de la esquina inferior izquierda */
+    border-bottom-right-radius: 15px; /* Radio de la esquina inferior derecha */
 }
 
 .custom-navbar .navbar-nav .nav-link {
@@ -168,11 +171,16 @@ body {
 .card-title,
 .card-autor {
     text-align: center;
+    color: rgb(255, 187, 0);
 }
 
 .card-sinopsis {
     font-size: 1.2rem;
+    color: rgb(255, 255, 255);
 
+}
+.card-title-sino{
+    color: rgb(255, 255, 255);
 }
 
 .col-card {
@@ -202,6 +210,11 @@ body {
     .title-c {
         margin-left: 1.5rem;
     }
+   
+
+}
+.title-s{
+    color: rgb(255, 183, 0);
 }
 
 //INCIO DEL LOS ESTILOS DEL FOOTER-------------------------------------------
@@ -230,3 +243,19 @@ footer {
 
 //FIN DEL LOS ESTILOS DEL FOOTER-------------------------------------------
 //FIN DE LOS ESTILOS DEl CONTENIDO DE LA PAGINA--------------------------------------
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
