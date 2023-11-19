@@ -57,79 +57,74 @@
     <!-----------------------------------------CONTENIDO DE LA PAGINA------------------------------------------------------>
 
 
-    <section class="vh-100">
-        <div class="container-fluid h-custom">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                    <form id="datosForm">
-                        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                            <h1 class="card-title-sino">DATOS  <span style="color: orange;">GENERALES</span></h1>
-                        </div>
-
-                        <div class="divider d-flex align-items-center my-4"></div>
-
-                        <!-- Nombre -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="nombre" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="nombre">Nombre</label>
-                        </div>
-
-                        <!-- Apellido Paterno -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="apellidoPaterno" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="apellidoPaterno">Apellido Paterno</label>
-                        </div>
-
-                        <!-- Apellido Materno -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="apellidoMaterno" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="apellidoMaterno">Apellido Materno</label>
-                        </div>
-
-                        <!-- País -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="pais" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="pais">País</label>
-                        </div>
-
-                        <!-- Ciudad -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="ciudad" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="ciudad">Ciudad</label>
-                        </div>
-
-                        <!-- Calle -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="calle" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="calle">Calle</label>
-                        </div>
-
-                        <!-- Número Exterior -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="numeroExterior" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="numeroExterior">Número Exterior</label>
-                        </div>
-
-                        <!-- Código Postal -->
-                        <div class="form-outline mb-4">
-                            <input type="text" id="codigoPostal" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="codigoPostal">Código Postal</label>
-                        </div>
-
-                        <!-- Teléfono -->
-                        <div class="form-outline mb-4">
-                            <input type="tel" id="telefono" class="form-control form-control-lg" required>
-                            <label class="form-label card-title-sino" for="telefono">Teléfono</label>
-                        </div>
-
-                        <div class="text-center text-lg-start mt-4 pt-2">
-                            <button type="button" class="btn btn-primary btn-lg" onclick="guardarDatos()">Guardar Datos</button>
-                        </div>
-
-                    </form>
+    <section class="container mt-5 mb-5" >
+        <form id="datosForm">
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                    <h1 class="card-title-sino">DATOS  <span style="color: orange;">GENERALES</span></h1>
                 </div>
+
+                <div class="divider d-flex align-items-center my-4"></div>
+
+            <section class="row" >
+
+                <!-- Nombre -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="nombre" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="nombre">Nombre</label>
+                </div>
+
+                <!-- Apellido Paterno -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="apellidoPaterno" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="apellidoPaterno">Apellido Paterno</label>
+                </div>
+
+                <!-- Apellido Materno -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="apellidoMaterno" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="apellidoMaterno">Apellido Materno</label>
+                </div>
+
+                <!-- País -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="pais" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="pais">País</label>
+                </div>
+
+                <!-- Ciudad -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="ciudad" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="ciudad">Ciudad</label>
+                </div>
+
+                <!-- Calle -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="calle" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="calle">Calle</label>
+                </div>
+
+                <!-- Número Exterior -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="numeroExterior" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="numeroExterior">Número Exterior</label>
+                </div>
+
+                <!-- Código Postal -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="codigoPostal" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="codigoPostal">Código Postal</label>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;"> 
+                    <input type="tel" id="telefono" class="form-control form-control-lg" required>
+                    <label class="form-label card-title-sino" for="telefono">Teléfono</label>
+                </div>
+            </section >
+            <div class ="d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-primary btn-lg" onclick="guardarDatos()">Guardar Datos</button>
             </div>
-        </div>
+        </form>
     </section>
 
     <script src="script.js"></script>
