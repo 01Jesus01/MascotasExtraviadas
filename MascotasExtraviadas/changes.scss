@@ -324,4 +324,155 @@ p{
 }
 
 //  Fin del Index (Pagina Principal)
-//////////////////////////////////////////////////////////
+
+// Menu  - (Axel) Este css esta asignado en el menu.html :)
+
+// Contenedor de la imagen del perro
+.custom-container-foto {
+    border-radius: 10px;
+    background-color: #ffffff; 
+    padding: 10px;
+    margin: 10px;
+}
+
+.custom-container-foto .img-container {
+    overflow: hidden; 
+}
+
+.custom-container-foto .custom-image {
+    width: 200px; 
+    height: 200px; 
+}
+
+// Contenedor de la info de la mascota 
+.custom-container-mascota {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word; 
+    text-align: left;
+    p{
+        color: #000000;
+    }
+    h{
+        color: #000000;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0; 
+    }
+}
+
+
+// Contenedor de la info del dueno
+.custom-container-dueno {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word; 
+    text-align: left;
+
+    p{
+        color: #000000;
+    }
+    h{
+        color: #000000;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0; 
+    }
+}
+
+// Contenedor del medico osea informacion del medico veterinario
+.custom-container-medico {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word; 
+    text-align: left;
+    
+    p{
+        color: #000000;
+    }
+    h{
+        color: #000000;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0; 
+    }
+}
+
+// Conetendor del historial
+.custom-container-historial {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word; 
+    text-align: left;
+    
+    p{
+        color: #000000;
+    }
+    h{
+        color: #000000;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0; 
+    }
+}
+
+
+
+// Tabla del historial
+.container-tabla {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    
+h1 {
+    text-align: center;
+    color:rgb(218, 137, 32);
+}
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de la tabla */
+.table td,
+.table th {
+    text-align: center;
+}
+
+/* Estilos para el encabezado de la tabla */
+.table thead th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos para las filas impares de la tabla */
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el campo de firma */
+.table td:last-child {
+    /* Puedes personalizar este estilo según tus necesidades */
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+}
+
+// AQUI TERMINA EL MENU 
