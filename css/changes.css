@@ -7,6 +7,7 @@
   --color-navbar: rgb(255, 255, 255);
   --color-card: rgb(0, 0, 0);
   --color-cafe-oscuro: #6F4D19;
+  --color-container: #f7f7f7;
 }
 
 .card {
@@ -15,7 +16,6 @@
 
 body {
   background-color: var(--color-fondo);
-  font-family: cursive;
 }
 
 .custom-navbar {
@@ -317,6 +317,10 @@ p {
   height: 200px;
 }
 
+.custom-container-foto:hover {
+  background-color: var(--color-container);
+}
+
 .custom-container-mascota {
   border-radius: 10px;
   background-color: #ffffff;
@@ -334,6 +338,10 @@ p {
 .custom-container-mascota ul {
   list-style-type: none;
   padding: 0;
+}
+
+.custom-container-mascota:hover {
+  background-color: var(--color-container);
 }
 
 .custom-container-dueno {
@@ -355,6 +363,10 @@ p {
   padding: 0;
 }
 
+.custom-container-dueno:hover {
+  background-color: var(--color-container);
+}
+
 .custom-container-medico {
   border-radius: 10px;
   background-color: #ffffff;
@@ -374,6 +386,10 @@ p {
   padding: 0;
 }
 
+.custom-container-medico:hover {
+  background-color: var(--color-container);
+}
+
 .custom-container-historial {
   border-radius: 10px;
   background-color: #ffffff;
@@ -391,6 +407,10 @@ p {
 .custom-container-historial ul {
   list-style-type: none;
   padding: 0;
+}
+
+.custom-container-historial:hover {
+  background-color: var(--color-container);
 }
 
 .container-tabla {
@@ -424,6 +444,43 @@ p {
   background-color: #f2f2f2;
 }
 .container-tabla .table td:last-child {
+  /* Puedes personalizar este estilo según tus necesidades */
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+.container-presentacion {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto 20rem;
+  /* Estilos de la tabla */
+  /* Estilos para las celdas de la tabla */
+  /* Estilos para el encabezado de la tabla */
+  /* Estilos para las filas impares de la tabla */
+  /* Estilos para el campo de firma */
+}
+.container-presentacion h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.container-presentacion .table {
+  width: 100%;
+  margin-top: 20px;
+}
+.container-presentacion .table td,
+.container-presentacion .table th {
+  text-align: center;
+}
+.container-presentacion .table thead th {
+  background-color: #ffa600;
+  color: #fff;
+}
+.container-presentacion .table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.container-presentacion .table td:last-child {
   /* Puedes personalizar este estilo según tus necesidades */
   border-bottom: 1px solid #ddd;
   padding: 8px;
