@@ -330,16 +330,6 @@ p {
   word-wrap: break-word;
   text-align: left;
 }
-.custom-container-mascota p {
-  color: #000000;
-}
-.custom-container-mascota h {
-  color: #000000;
-}
-.custom-container-mascota ul {
-  list-style-type: none;
-  padding: 0;
-}
 
 .custom-container-mascota:hover {
   background-color: var(--color-container);
@@ -492,6 +482,6 @@ p {
   margin-top: 20px;
 }
 .info-tabla-mascota thead th {
-  background-color: #ffa600;
+  background-color: #ff3f3f;
   color: #fff;
 }/*# sourceMappingURL=changes.css.map */
