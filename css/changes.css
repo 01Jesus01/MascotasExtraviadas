@@ -1,11 +1,13 @@
 @charset "UTF-8";
 :root {
   --color-fondo: #022025;
-  --color-blanco: #000000;
+  --color-negro: #000000;
+  --color-blanco: #FFFF;
   --color-texto: rgb(223, 171, 27);
   --color-navbar: rgb(255, 255, 255);
   --color-card: rgb(0, 0, 0);
   --color-cafe-oscuro: #6F4D19;
+  --color-container: #f7f7f7;
 }
 
 .card {
@@ -14,6 +16,7 @@
 
 body {
   background-color: var(--color-fondo);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .custom-navbar {
@@ -24,12 +27,12 @@ body {
 }
 
 .custom-navbar .navbar-nav .nav-link {
-  color: var(--color-blanco);
+  color: var(--color-negro);
   /* Cambia el color del texto a blanco */
 }
 
 .navbar-brand {
-  color: var(--color-blanco);
+  color: var(--color-negro);
   /* Cambia el color del texto a blanco  en webiblio*/
 }
 
@@ -43,9 +46,9 @@ body {
   width: 25rem;
   height: auto;
   display: center;
-  background-color: var(--color-blanco);
+  background-color: var(--color-negro);
   padding: 0.625rem;
-  border: 1px solid var(--color-blanco);
+  border: 1px solid var(--color-negro);
   position: fixed;
   top: 7.5%;
   left: 0;
@@ -87,9 +90,9 @@ body {
     width: 99.5%;
     height: auto;
     display: center;
-    background-color: var(--color-blanco);
+    background-color: var(--color-negro);
     padding: 0.625rem;
-    border: 1px solid var(--color-blanco);
+    border: 1px solid var(--color-negro);
     position: relative;
     top: 7.5%;
     margin-left: 0;
@@ -143,7 +146,7 @@ body {
 
 .card-img-top-3 {
   height: 14rem;
-  width: 9rem;
+  width: 19rem;
   margin-left: 1.5rem;
 }
 
@@ -210,13 +213,13 @@ footer {
   padding: 4rem;
 }
 footer p {
-  color: var(--color-blanco);
+  color: var(--color-negro);
   font-family: Lucida Bright;
   font-size: 1rem;
   margin: 0.1rem;
 }
 footer .link-1 {
-  color: var(--color-blanco);
+  color: var(--color-negro);
   margin: 3rem;
   text-decoration: none;
 }
@@ -240,4 +243,246 @@ footer img {
   .h-custom {
     height: 100%;
   }
+}
+.container {
+  margin-top: 12rem;
+}
+
+.container1 {
+  margin-top: 15rem;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  color: var(--color-blanco);
+}
+
+p {
+  font-size: 20px;
+  color: var(--color-blanco);
+}
+
+.img_1 {
+  display: flex;
+  justify-content: center;
+}
+
+.Titulo {
+  font-size: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  float: left;
+}
+
+.Eslogan p {
+  font-size: 50px;
+  text-align: center;
+  width: 85%;
+}
+
+.Eslogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.logo {
+  float: left;
+  border-radius: 10%;
+}
+
+.cuerpo {
+  margin: 10em;
+}
+
+.Intro, .Obj, .Jus {
+  padding-top: 10%;
+}
+
+.custom-container-foto {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+}
+
+.custom-container-foto .img-container {
+  overflow: hidden;
+}
+
+.custom-container-foto .custom-image {
+  width: 200px;
+  height: 200px;
+}
+
+.custom-container-foto:hover {
+  background-color: var(--color-container);
+}
+
+.custom-container-mascota {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.custom-container-mascota:hover {
+  background-color: var(--color-container);
+}
+
+.custom-container-dueno {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  word-wrap: break-word;
+  text-align: left;
+}
+.custom-container-dueno p {
+  color: #000000;
+}
+.custom-container-dueno h {
+  color: #000000;
+}
+.custom-container-dueno ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-container-dueno:hover {
+  background-color: var(--color-container);
+}
+
+.custom-container-medico {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  word-wrap: break-word;
+  text-align: left;
+}
+.custom-container-medico p {
+  color: #000000;
+}
+.custom-container-medico h {
+  color: #000000;
+}
+.custom-container-medico ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-container-medico:hover {
+  background-color: var(--color-container);
+}
+
+.custom-container-historial {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  word-wrap: break-word;
+  text-align: left;
+}
+.custom-container-historial p {
+  color: #000000;
+}
+.custom-container-historial h {
+  color: #000000;
+}
+.custom-container-historial ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-container-historial:hover {
+  background-color: var(--color-container);
+}
+
+.container-tabla {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Estilos de la tabla */
+  /* Estilos para las celdas de la tabla */
+  /* Estilos para el encabezado de la tabla */
+  /* Estilos para las filas impares de la tabla */
+  /* Estilos para el campo de firma */
+}
+.container-tabla h1 {
+  text-align: center;
+  color: rgb(218, 137, 32);
+}
+.container-tabla .table {
+  width: 100%;
+  margin-top: 20px;
+}
+.container-tabla .table td,
+.container-tabla .table th {
+  text-align: center;
+}
+.container-tabla .table thead th {
+  background-color: #007bff;
+  color: #fff;
+}
+.container-tabla .table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.container-tabla .table td:last-child {
+  /* Puedes personalizar este estilo según tus necesidades */
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+.container-presentacion {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto 20rem;
+  /* Estilos de la tabla */
+  /* Estilos para las celdas de la tabla */
+  /* Estilos para el encabezado de la tabla */
+  /* Estilos para las filas impares de la tabla */
+  /* Estilos para el campo de firma */
+}
+.container-presentacion h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.container-presentacion .table {
+  width: 100%;
+  margin-top: 20px;
+}
+.container-presentacion .table td,
+.container-presentacion .table th {
+  text-align: center;
+}
+.container-presentacion .table thead th {
+  background-color: #ffa600;
+  color: #fff;
+}
+.container-presentacion .table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.container-presentacion .table td:last-child {
+  /* Puedes personalizar este estilo según tus necesidades */
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+.info-tabla-mascota {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.info-tabla-mascota thead th {
+  background-color: #ff3f3f;
+  color: #fff;
 }/*# sourceMappingURL=changes.css.map */

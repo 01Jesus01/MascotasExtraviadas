@@ -1,10 +1,12 @@
 :root {
     --color-fondo: #022025;
-    --color-blanco: #000000;
+    --color-negro: #000000;
+    --color-blanco: #FFFF;
     --color-texto: rgb(223, 171, 27);
     --color-navbar:  rgb(255, 255, 255);
     --color-card: rgb(0, 0, 0);
     --color-cafe-oscuro: #6F4D19;
+    --color-container: #f7f7f7;
 }
 
 .card {
@@ -13,6 +15,10 @@
 
 body {
     background-color: var(--color-fondo);
+    // background-image: url("https://img.freepik.com/vector-premium/fondo-transparente-azul-huellas-patas-gato-perro_560021-99.jpg");
+   // background-size: cover;
+   //  background-position: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -25,12 +31,12 @@ body {
 }
 
 .custom-navbar .navbar-nav .nav-link {
-    color: var(--color-blanco);
+    color: var(--color-negro);
     /* Cambia el color del texto a blanco */
 }
 
 .navbar-brand {
-    color: var(--color-blanco);
+    color: var(--color-negro);
     /* Cambia el color del texto a blanco  en webiblio*/
 }
 
@@ -43,9 +49,9 @@ body {
     width: 25rem;
     height: auto;
     display: center;
-    background-color: var(--color-blanco);
+    background-color: var(--color-negro);
     padding: 0.625rem;
-    border: 1px solid var(--color-blanco);
+    border: 1px solid var(--color-negro);
     position: fixed;
     top: 7.5%;
     left: 0;
@@ -87,9 +93,9 @@ body {
     width: 99.5%;
     height: auto;
     display: center;
-    background-color: var(--color-blanco);
+    background-color: var(--color-negro);
     padding: 0.625rem;
-    border: 1px solid var(--color-blanco);
+    border: 1px solid var(--color-negro);
     position: relative;
     top: 7.5%;
     margin-left: 0;
@@ -151,7 +157,7 @@ body {
 
 .card-img-top-3 {
     height: 14rem;
-    width: 9rem;
+    width: 19rem;
     margin-left: 1.5rem;
 }
 
@@ -222,14 +228,14 @@ footer {
     background-color: var(--color-navbar);
     padding:4rem;
     p {
-        color: var(--color-blanco);
+        color: var(--color-negro);
         font-family:Lucida Bright;
         font-size: 1rem;
         margin:0.1rem;
     }
 
     .link-1{
-        color: var(--color-blanco);
+        color: var(--color-negro);
         margin:3rem;
         text-decoration: none;
     }
@@ -258,4 +264,281 @@ height: calc(100% - 73px);
 .h-custom {
 height: 100%;
 }
+}
+
+
+//////////////////////////////////////////////////////////
+//  Inicio del Index (Pagina Principal)
+.container{
+    margin-top: 12rem;
+}
+
+.container1{
+    margin-top: 15rem;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: var(--color-blanco);
+}
+
+p{
+    font-size: 20px;
+    color: var(--color-blanco);
+}
+
+.img_1{
+    display: flex;
+    justify-content: center;
+}
+
+.Titulo{
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    float: left;
+}
+
+.Eslogan p {
+    font-size: 50px;
+    text-align: center;
+    width: 85%;
+}
+
+.Eslogan{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.logo{
+    float: left;
+    border-radius: 10%;
+}
+
+.cuerpo{
+    margin: 10em;
+}
+
+.Intro, .Obj, .Jus{
+    padding-top: 10%;
+}
+
+//  Fin del Index (Pagina Principal)
+
+// Menu  - (Axel) Este css esta asignado en el menu.html :)
+
+// Contenedor de la imagen del perro
+.custom-container-foto {
+    border-radius: 10px;
+    background-color: #ffffff; 
+    padding: 10px;
+    margin: 10px;
+}
+
+.custom-container-foto .img-container {
+    overflow: hidden; 
+}
+
+.custom-container-foto .custom-image {
+    width: 200px; 
+    height: 200px; 
+}
+.custom-container-foto:hover{
+    background-color: var(--color-container);
+}
+// Contenedor de la info de la mascota 
+.custom-container-mascota {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+
+    word-wrap: break-word; 
+    text-align: left;
+
+
+}
+.custom-container-mascota:hover{
+    background-color: var(--color-container);
+}
+
+
+
+// Contenedor de la info del dueno
+.custom-container-dueno {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word; 
+    text-align: left;
+
+    p{
+        color: #000000;
+    }
+    h{
+        color: #000000;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0; 
+    }
+}
+.custom-container-dueno:hover{
+    background-color: var(--color-container);
+}
+
+// Contenedor del medico osea informacion del medico veterinario
+.custom-container-medico {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word; 
+    text-align: left;
+    
+    p{
+        color: #000000;
+    }
+    h{
+        color: #000000;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0; 
+    }
+}
+.custom-container-medico:hover{
+    background-color: var(--color-container);
+}
+
+// Conetendor del historial
+.custom-container-historial {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word; 
+    text-align: left;
+    
+    p{
+        color: #000000;
+    }
+    h{
+        color: #000000;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0; 
+    }
+}
+.custom-container-historial:hover{
+    background-color: var(--color-container);
+}
+
+
+// Tabla del historial
+.container-tabla {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    
+h1 {
+    text-align: center;
+    color:rgb(218, 137, 32);
+}
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de la tabla */
+.table td,
+.table th {
+    text-align: center;
+}
+
+/* Estilos para el encabezado de la tabla */
+.table thead th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos para las filas impares de la tabla */
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el campo de firma */
+.table td:last-child {
+    /* Puedes personalizar este estilo según tus necesidades */
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+}
+
+// AQUI TERMINA EL MENU 
+.container-presentacion{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto 20rem;
+
+      
+h1 {
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de la tabla */
+.table td,
+.table th {
+    text-align: center;
+}
+
+/* Estilos para el encabezado de la tabla */
+.table thead th {
+    background-color: #ffa600;
+    color: #fff;
+}
+
+/* Estilos para las filas impares de la tabla */
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el campo de firma */
+.table td:last-child {
+    /* Puedes personalizar este estilo según tus necesidades */
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+}
+
+// EN EL HTML Mascota_Perdida
+.info-tabla-mascota{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5rem;
+
+    thead th {
+        background-color: #ff3f3f;
+        color: #fff;
+    }
 }

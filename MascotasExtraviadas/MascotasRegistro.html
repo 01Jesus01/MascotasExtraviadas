@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro mascota</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="../css/changes.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-----------------------------------------BARRA DE NAVEGACION------------------------------------------------------>
+    <!-- ESTA SECCION ESTA LA BARRA DE NAVEGACION-->
+    <!-- EN EL SCSS EN CUSTOM-NAVBAR TIENE LAS PROPIEDADES DE COLOR Y FONDO PUEDES MODIFICARLO AHI EN EL SCSS-->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo.jpg"
+                    alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Mascotas Extraviadas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categoria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="amor.html">Amor</a></li>
+                            <li><a class="dropdown-item" href="drama.html">Drama</a></li>
+                            <li><a class="dropdown-item" href="terror.html">Terror</a></li>
+                            <li><a class="dropdown-item" href="fantasia.html">Fantasia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"
+                        id="inputBusqueda">
+                </form>
+                <div id="resultadoBusqueda" class="container_buscador">
+                    <!--Aqui se muestra el conatiner no hay que poner nada aqui :)) -->
+                </div>
+                <div class="ml-auto">
+                    <a href="iniciar.html" class="btn btn-outline-dark">Iniciar sesion</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-----------------------------------------FIN DE LA BARRA DE NAVEGACION------------------------------------------------------>
+
+    <!-----------------------------------------CONTENIDO DE LA PAGINA------------------------------------------------------>
+    <!-- ESTA SECCION ESTA EL CONTENIDO DE LA PAGINA-->
+    <br>
+    <section class="container mt-5 mb-5">
+            <form>
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                 <h1 class="card-title-sino">REGISTRAR <span style="color:orange">MASCOTA</span><h1> 
+                </div>
+               
+                <div class="divider d-flex align-items-center my-2">
+                </div>
+                <h1 class="card-title-sino col-sm-6 col-lg-4">DATOS <span style="color:orange">GENERALES</span><h1> 
+                  <p style="font-size: 1rem;">Ingresa los datos generales de tu mascota:  </p>
+                <section class="row" style="font-size: 1rem;">
+                     <!-- nombre -->
+                  <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="nombre_mascota" class="form-control form-control-lg" />
+                    <label class="form-label card-title-sino" for="nombre_mascota ">Nombre de la mascota</label>
+                  </div>
+                  <!-- especie  -->
+                  <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <select id="especie" class="form-control form-control-lg">
+                      <option value="" disabled selected></option>
+                      <option value="gato">Gato</option>
+                      <option value="perro">Perro</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                    <label class="form-label card-title-sino" for="Especie">Especie</label>
+                  </div>
+                  <!--Raza-->
+                  <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="raza" class="form-control form-control-lg"/>
+                    <label class="form-label card-title-sino" for="raza ">Raza</label>
+                  </div>
+                  <!--Sexo-->
+                  <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <select id="Sexo" class="form-control form-control-lg">
+                      <option value="" disabled selected></option>
+                      <option value="macho">Macho</option>
+                      <option value="hembra">Hembra</option>
+                    </select>
+                    <label class="form-label card-title-sino" for="Sexo">Sexo</label>
+                  </div>
+                   <!--Edad-->
+                  <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="number" id="edad" class="form-control form-control-lg" min="1" max="100"/>
+                    <label class="form-label card-title-sino" for="edad">Edad</label>
+                  </div>
+
+                    <!--Color-->
+                  <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="text" id="color" class="form-control form-control-lg"/>
+                    <label class="form-label card-title-sino" for="color ">Color</label>
+                  </div>
+                    <!--Altura-->
+                  <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="number" id="altura" class="form-control form-control-lg" min="1" max="200"/>
+                    <label class="form-label card-title-sino" for="altura">Altura (cm)</label>
+                  </div>
+                    <!--Peso-->
+                    <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                      <input type="number" id="peso" class="form-control form-control-lg" min="1" max="200"/>
+                      <label class="form-label card-title-sino" for="peso">Peso (kg)</label>
+                    </div>
+                  <!--Fecha Nacimiento-->
+                  <div class="col-sm-6 col-lg-4" style="margin-bottom: 1rem;">
+                    <input type="date" id="fechaN" class="form-control form-control-lg"/>
+                    <label class="form-label card-title-sino" for="fechaN">Fecha de nacimiento</label>
+                  </div>
+                </section>  
+                
+                <h1 class="card-title-sino col-sm-6 col-lg-4">DATOS <span style="color:orange">VACUNA</span><h1> 
+                  <p style="font-size: 1rem;">¿Tu mascota ya tiene vacunas?, ingresa la vacuna y la fecha en la que se realizo:   </p>
+
+                <section class="row" style="font-size: 1rem;">
+                   <!--Vacuna-->
+                   <div class="col-sm-6 col-lg-4" >
+                    <input type="text" id="vacuna" class="form-control form-control-lg"/>
+                    <label class="form-label card-title-sino" for="vacuna">Vacuna</label>
+                  </div>
+                  <!--Vacuna descropcion-->
+                  <div class="col-sm-6 col-lg-4">
+                    <input type="text" id="descripcion" class="form-control form-control-lg"/>
+                    <label class="form-label card-title-sino" for="descripcion">Descripcion de vacuna</label>
+                  </div>
+                  <!--Fecha De Vacunacion-->
+                  <div class="col-sm-6 col-lg-4" >
+                    <input type="date" id="fechaV" class="form-control form-control-lg"/>
+                    <label class="form-label card-title-sino" for="fechaV">Fecha de vacunacion</label>
+                  </div>  
+                </section>
+                </section>
+                <section class="d-flex flex-column align-items-center" style="font-size: 1rem; margin-bottom: 4rem;">
+                  <div class="col-sm-6 col-lg-4">
+                    <input  type="file" id="seleccionarImagen" class="form-control-file " accept="image/*" 
+                    style="color:aliceblue; margin-left: 4rem;"/>
+                  </div>
+                    <label class="form-label card-title-sino" for="imagen">Imagen de la mascota</label>
+                    <div class="col-sm-6 col-lg-4 text-center" >
+                            <a href="menu.html" class="btn btn-primary btn-lg"
+                            style="padding-left: 2.5rem; padding-right: 2.5rem;  margin-top: 1rem;">Registrar mascota</a>
+                    </div>
+                </section>
+                
+            </form>
+   </section>
+
+    <!-----------------------------------------FIN DEL CONTENIDO DE LA PAGINA------------------------------------------------------>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+        <footer class="footer mt-auto py-2 ">
+          <div class="row">
+              <div class="col-sm-4 col-lg-4 text-light text-center">
+                  <p>Siguenos en:</p>
+                  <a href="https://www.instagram.com/"> <img
+                          src="https://www.unipile.com/wp-content/uploads/2022/09/logo_instagram.png.webp" alt="Logo"
+                          width="30" height="30" class="d-inline-block align-text-top"></a>
+                  <a href="https://www.facebook.com/?locale=es_LA"> <img
+                          src="https://cdn-icons-png.flaticon.com/256/2504/2504792.png" alt="Logo" width="30" height="30"
+                          class="d-inline-block align-text-top"></a>
+                  <a href="https://twitter.com/?lang=es"> <img
+                          src="https://vectorseek.com/wp-content/uploads/2023/07/Twitter-X-New-Logo-Vector-2.png"
+                          alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
+                  <p>@MascotasExtraviadas</p>
+              </div>
+              <div class="col-sm-3 col-lg-4 text-light text-center">
+                  <img src="../img/logo.jpg"
+                      alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+              </div>
+              <div class="col-sm-5 col-lg-4 text-center">
+                  <p>Contactanos por: </p>
+                  <a class="link-1"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Logo" width="15"
+                          height="15" class="d-inline-block align-text-top">
+                      MascotasExtraviadas@gmail.com</a></br>
+                  <a class="link-1"> <img
+                          src="https://i.pinimg.com/originals/7e/71/4c/7e714c3c9148f4def7d3b5a704317df6.png" alt="Logo"
+                          width="15" height="15" class="d-inline-block align-text-top">
+                      +52-614-273-93-01</a>
+              </div>
+          </div>
+      </footer>
+    <script src="../js/buscador.js"></script>
+</body>
+
+</html>
