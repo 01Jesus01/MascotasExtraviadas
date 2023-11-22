@@ -16,6 +16,7 @@
 
 body {
   background-color: var(--color-fondo);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .custom-navbar {
@@ -484,4 +485,13 @@ p {
   /* Puedes personalizar este estilo según tus necesidades */
   border-bottom: 1px solid #ddd;
   padding: 8px;
+}
+
+.info-tabla-mascota {
+  width: 100%;
+  margin-top: 20px;
+}
+.info-tabla-mascota thead th {
+  background-color: #ffa600;
+  color: #fff;
 }/*# sourceMappingURL=changes.css.map */
