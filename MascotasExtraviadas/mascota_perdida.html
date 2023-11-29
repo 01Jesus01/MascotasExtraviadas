@@ -22,7 +22,7 @@
             <a class="navbar-brand" href="index.html">
                 <img src="/img/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"
                     style="border-radius: 20%;">
-                Mascotas Extraviadas
+                    LifePets
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +34,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="MascotasRegistro.html">Registrar una
-                            mascota</a>
+                        <a class="nav-link active" aria-current="page" href="MascotasRegistro.html">Mostrar informacion</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -76,8 +75,8 @@
                 <div class="col-md-6 container-presentacion mx-auto" style="border-top-right-radius: 3rem ; border-top-left-radius: 3rem ;">
 
                     <div class="col-md-5 custom-container-foto mx-auto ">
-                        <div class="img-container">
-                            <img src="https://cdn.forbes.com.mx/2023/07/Dia-del-perro.jpg" style="width: 1000rem;"
+                        <div class="img-container" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);">
+                            <img src="https://cdn.forbes.com.mx/2023/07/Dia-del-perro.jpg" style="width: 1000rem; "
                                 alt="Perrito" class="img-fluid rounded custom-image">
                         </div>
                     </div>
@@ -86,7 +85,7 @@
             <table class="info-tabla-mascota">
                 <thead>
                     <tr>
-                        <th scope="col">Datos de Alfonso</th>
+                        <th scope="col">Informacion</th>
                      
                     </tr>
                 </thead>
@@ -155,10 +154,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="d-flex justify-content-evenly" style="margin-top: 5rem; margin-bottom:5rem ;" >
-
-            <a href="" class="btn btn-success btn-lg"
-            style="padding-left: 2.5rem; padding-right: 2.5rem;">Mascota encontrada</a>
+        <div class="d-flex justify-content-evenly" style="margin-top: 5rem; margin-bottom: 5rem;">
+            <a href="" id="btnMascotaEncontrada" class="btn btn-success btn-lg"
+            style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="mostrarMensaje()">Mascota encontrada</a>
         </div>
        
 
@@ -181,7 +179,7 @@
                     <a href="https://twitter.com/?lang=es"> <img
                             src="https://vectorseek.com/wp-content/uploads/2023/07/Twitter-X-New-Logo-Vector-2.png"
                             alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
-                    <p>@tecbiblio</p>
+                    <p>@LifePets</p>
                 </div>
                 <div class="col-sm-3 col-lg-4 text-light text-center">
                     <img src="https://images.vexels.com/media/users/3/273076/isolated/preview/664402e989ea14a5fdceeee3a4c2b875-icono-de-juego-de-rol-de-libro.png"
@@ -191,7 +189,7 @@
                     <p>Contactanos por: </p>
                     <a class="link-1"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Logo"
                             width="15" height="15" class="d-inline-block align-text-top">
-                        tecbiblio124@gmail.com</a></br>
+                            LifePets@gmail.com</a></br>
                     <a class="link-1"> <img
                             src="https://i.pinimg.com/originals/7e/71/4c/7e714c3c9148f4def7d3b5a704317df6.png"
                             alt="Logo" width="15" height="15" class="d-inline-block align-text-top">
@@ -200,6 +198,7 @@
             </div>
         </footer>
         <script src="../js/buscador.js"></script>
+        <script src="../js/mascota_encontrada.js"></script>
 </body>
 
 </html>
